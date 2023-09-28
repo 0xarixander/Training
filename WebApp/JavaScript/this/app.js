@@ -10,11 +10,19 @@ class NameField {
 class NameGenerator {
     constructor() {
         const btn = document.querySelector('button');
-        btn.addEventListener('click', this.addName)
+        this.names = ['Max', 'Manu', 'Anna'];                 // For every click I want to add a different name. This keyword makes it a variable attached to the class
+        this.currentName = 0;
+        //console.log(this);
+        btn.addEventListener('click', this.addName.bind(this));
     }
 
     addName() {
-        const name = new NameField("Max");
+        //console.log(this);
+        const name = new NameField(this.names[this.currentName]);
+        this.currentName++;
+        if (this.currentName >= this.names.length) {
+            this.currentName = 0;
+        }
     }
 }
 
