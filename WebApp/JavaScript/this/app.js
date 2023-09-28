@@ -13,7 +13,9 @@ class NameGenerator {
         this.names = ['Max', 'Manu', 'Anna'];                 // For every click I want to add a different name. This keyword makes it a variable attached to the class
         this.currentName = 0;
         //console.log(this);
-        btn.addEventListener('click', this.addName.bind(this));
+        btn.addEventListener('click', () => {
+            this.addName();
+        });
     }
 
     addName() {
