@@ -1,27 +1,33 @@
-const person = {
-    name: 'Max',
-    age: 29,
-    greet() {
-        console.log('Hi I am ' + this.name);
-    }
-};
+setTimeout(() => {
+    console.log('Timer is done!');
+}, 2000);
 
-const printName = ({ name }) => {
-    console.log(name)
-}
+console.log('Hello!');
+console.log('Hi!');
+// const person = {
+//     name: 'Max',
+//     age: 29,
+//     greet() {
+//         console.log('Hi I am ' + this.name);
+//     }
+// };
 
-printName(person);
+// const printName = ({ name }) => {
+//     console.log(name)
+// }
 
-const { name, age } = person;
+// printName(person);
 
-console.log(name, age);
+// const { name, age } = person;
 
-// const copiedPerson = {...person};
-// console.log(copiedPerson);
+// console.log(name, age);
 
-const hobbies = ['Sports', 'Cooking'];
-const [hobby1, hobby2] = hobbies;
-console.log(hobby1, hobby2);
+// // const copiedPerson = {...person};
+// // console.log(copiedPerson);
+
+// const hobbies = ['Sports', 'Cooking'];
+// const [hobby1, hobby2] = hobbies;
+// console.log(hobby1, hobby2);
 
 // // for (let hobby of hobbies) {
 // //     console.log(hobby);
