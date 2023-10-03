@@ -6,23 +6,29 @@ const person = {
     }
 };
 
-const copiedPerson = {...person};
-console.log(copiedPerson);
+const printName = (personData) => {
+    console.log(personData.name)
+}
 
-const hobbies = ['Sports', 'Cooking'];
+printName(person);
 
-// for (let hobby of hobbies) {
-//     console.log(hobby);
-// }
+// const copiedPerson = {...person};
+// console.log(copiedPerson);
 
-// console.log(hobbies.map(hobby => 'Hobby ' + hobby));
-// console.log(hobbies);
+// const hobbies = ['Sports', 'Cooking'];
 
-const copiedArray = [...hobbies];
-console.log(copiedArray);
+// // for (let hobby of hobbies) {
+// //     console.log(hobby);
+// // }
 
-const toArray = (...args) => {
-    return args;
-};
+// // console.log(hobbies.map(hobby => 'Hobby ' + hobby));
+// // console.log(hobbies);
 
-console.log(toArray(1, 2, 3, 4));
+// const copiedArray = [...hobbies];
+// console.log(copiedArray);
+
+// const toArray = (...args) => {
+//     return args;
+// };
+
+// console.log(toArray(1, 2, 3, 4));
