@@ -16,7 +16,6 @@ const server = http.createServer((req, res) => {
         const body = [];
         // Assign response chunks to body
         req.on('data', (chunk) => {
-            console.log(chunk);
             body.push(chunk);
         });
         // Buffer response chunks
@@ -42,9 +41,6 @@ const server = http.createServer((req, res) => {
     res.write('<head><title>My First Page</title></head>');
     res.write('<body><h1>Hello from my Node.JS Server!</h1></body>');
     res.write('</html>');
-    // console.log(req.url, req.method, req.headers);
-    // process.exit();
-    
     // res.write('This will cause an error cause res.end() was called');
 });
 
